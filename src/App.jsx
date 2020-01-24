@@ -1,3 +1,11 @@
-var contentNode = document.getElementById('contents');
-var component = <h1>Hello World!</h1>; // A simple JSX component
-ReactDOM.render(component, contentNode); // Render the component inside the content Node
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<h1>hello</h1>
+			</div>
+		)
+	}
+}
+
+ReactDOM.render(React.createElement(App), document.getElementById("root"));
